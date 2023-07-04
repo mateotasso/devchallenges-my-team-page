@@ -1,1 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 32px;
+}
+
+h1 {
+    font-family: "PT Serif", serif; 
+    font-size: 32px;
+    margin-bottom: 2rem;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+div p {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+}
+
+.img-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-bottom: 6rem;
+}
+
+.img-section div {
+    position: relative;
+    
+}
+
+.img-section img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-section div:nth-child(even) {
+    transform: translateY(20%);
+}
