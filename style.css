@@ -46,6 +46,14 @@ div p {
 
 .img-section div {
     position: relative;
+}
+
+.img-section div:nth-child(even) {
+    transform: translateY(20%);
+}
+
+.img-section div {
+    position: relative;
     
 }
 
@@ -55,6 +63,17 @@ div p {
     object-fit: cover;
 }
 
-.img-section div:nth-child(even) {
-    transform: translateY(20%);
+@media (min-width: 768px) {
+    body {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .hero-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img-section img {
+        height: 500px;
+    }
 }
